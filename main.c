@@ -4,13 +4,19 @@
 int main(int argc, char *argv[])
 {
   
-  int year;
+  int x, y, z, m;
+  int a, b, c;
   
-  printf("input the year : ");
-  scanf("%i", &year);
-
-  printf("is the year %i the leap year? : %i\n", year, (year%4 == 0 && year%100 != 0) || year%400 == 0);
+  x = 2;
+  z = 1;
+  a = 3;
+  b = 4;
+  c = 5;
   
+  y = a*(x*x) + b*x + c;
+  m = (x + y + z) / 3;
+  
+  printf("y=%d, m=%d\n", y, m);
   
   system("PAUSE");	
   return 0;
