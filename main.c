@@ -3,20 +3,20 @@
 
 int main(int argc, char *argv[])
 {
+  unsigned int x;
+  int b;
   
-  int x, y, z, m;
-  int a, b, c;
+  printf("input a number : ");
+  scanf("%ui", &x);
+
+  for (b=0; x != 0; x>>=1){
+      if (x & 1){
+            b++;
+      }
+  }
   
-  x = 2;
-  z = 1;
-  a = 3;
-  b = 4;
-  c = 5;
+  printf("The result is : %i\n", b);           
   
-  y = a*(x*x) + b*x + c;
-  m = (x + y + z) / 3;
-  
-  printf("y=%d, m=%d\n", y, m);
   
   system("PAUSE");	
   return 0;
